@@ -35,7 +35,7 @@ def dataPrepocessing():
 
     
     #drop column
-    cols = [df.columns[0],'school','Pstatus','guardian','romantic','famrel','freetime','goout','Dalc','Walc']
+    cols = [df.columns[0],'school','sex','age','address','famsize','Medu','Pstatus','guardian','schoolsup','famsup','paid','activities','nursery','romantic','famrel','freetime','goout','Dalc','Walc','health']
     df.drop(cols,inplace=True, axis=1)
     
     #replacing negative values with 0
